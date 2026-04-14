@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.env
+.env.*
+.venv
+venv/
+env/
+ENV/
+
+# SQLite databases (may contain case data)
+*.db
+*.sqlite3
+
+# Secrets
+credentials.json
+secrets.json
+*.key
+*.pem
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Case output / forensic artifacts
+output/
+exports/
+reports/
