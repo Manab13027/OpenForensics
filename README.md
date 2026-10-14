@@ -1,37 +1,27 @@
 # OpenForensics
 
-_TODO: one line on what this project does and who it's for._
+An **educational digital-forensics toolkit** with a dark-themed desktop GUI. It
+inspects a computer or connected mobile device and surfaces forensic artifacts —
+files, installed and deleted apps, and browser data — then compiles a report.
+Runs on macOS, Windows and Linux, and can examine Android devices over ADB and
+iPhone data from iTunes backups. Pure standard-library Python (no third-party
+packages).
 
-**Stack:** Python
+## Features
+- Analyzers for files, apps, **deleted apps**, and browsers
+- **Android** acquisition over ADB (bundled platform-tools); **iPhone** via
+  iTunes backups
+- One-click report generation (`report.py`)
+- Cross-platform launchers (`start_mac.sh`, `start_ubuntu.sh`, `start_windows.bat`)
+
+## Stack
+Python (standard library) · Tkinter · ADB
 
 ## Getting started
-
 ```bash
-pip install -r requirements.txt
 python main.py
 ```
 
-## Project structure
-
-```
-adb_setup.py
-analyzers/
-install_claude_config.bat
-install_claude_config.sh
-main.py
-platform-tools/
-push_to_github.sh
-report.py
-requirements.txt
-start_mac.sh
-start_ubuntu.sh
-start_windows.bat
-```
-
 ## Notes
-
-_TODO: anything a new user should know — configuration, env vars, known limitations._
-
----
-
-_README scaffolded by readme_gen. Edit the TODOs to finish it._
+> **Legal:** for forensics education and **authorised** investigations only.
+> Only analyse systems you own or have written permission to examine.
